@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css.css" type="text/css">
+</head>
+<body>
+    <form action="../PHP/review.php" method="post"></form>
+    <fieldset>
+        <legend>Your Details:</legend>
+        <label for="namefield">Name:
+            <input type="text" name="name" id="namefield" placeholder="Enter name here" size="31" maxlength="100">
+        </label>
+        <br>
+        <label for="emailfield">Email:
+            <input type="text" name="email" id="emailfield" placeholder="Enter email here" size="31" maxlength="100">
+        </label>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Your Review:</legend>
+        <label for="sourcelist">How did U hear about us?</label> 
+        <select name="sources" id="sourcelist"> 
+            <option value="google">Google</option>
+            <option value="ya">Yandex</option>
+            <option value="other">Other</option>
+        </select>
+
+        <div class="visit" >
+            <p>Would You visit us again?  <br>
+        <label for="visit_yes">
+            <input type="radio" name="visit" id="visit_yes" checked="checked">Yes
+        </label>
+        <label for="visit_no">
+            <input type="radio" name="visit" id="visit_no">No
+        </label>
+        <label for="visit_mb"><input type="radio" name="visit" id="visit_mb">Maybe
+        </label>
+            </p>
+        </div>
+        <p>
+            <label for="comments">Comments:</label> 
+            <textarea name="comments" id="comments" cols="30" rows="5">Your comments here</textarea>
+        </p>
+        <label for="sign_up">
+            <input type="checkbox" name="updates" id="sign_up" value="yes" checked>
+            Sign me up for email updates
+        </label>
+        <br>
+        <p></p>
+        <input type="submit" value="Submit review" name="submit">
+
+
+    </fieldset>
+</body>
+</html>
